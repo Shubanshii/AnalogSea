@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<meta name="description" content="Sign Up for AnalogSea.  A company that Analogs the Sea.">
+	<title>AnalogSea Sign Up Page</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
 </head>
@@ -13,16 +14,22 @@
 <main>
   		<div class="container">
   <h1>Sign Up</h1>
-  <form>
+  <form class='sign-up-form' action="/signup/" method='post'>
   	<fieldset name="sign-up" class="sign-up">
-  		<label for="email">Email</label>
-  		<input placeholder='foo@bar.com' type="text" name='email' id='email' />
-		<label for="password">Password</label>
-		<input placeholder="1234passw0rd" type="text" name='password' id='password'>
+  		<label for="email" required>Email</label>
+  		<input placeholder="foo@bar.com" type="email" name="email" id="email" required>
+		<label for="password" required>Password</label>
+		<input placeholder="1234passw0rd" type="text" name="password" id="password" required>
   	</fieldset>
-
+	<button type="submit" class="sign-up-button"><h2>Sign Up</h2></button>
   </form>
+  <div class="forgot-password">
+  	<a href="/forgot-password/new">Forgot Password?</a>
+  	</div>
 </div>
+	<section>
+		<p><Strong>Already have an account? <a href="/login">Log in</a>.</Strong></p>
+	</section>
   	</main>
 </body>
 </html>

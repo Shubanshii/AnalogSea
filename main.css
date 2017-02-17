@@ -27,6 +27,8 @@ main {
     text-align: center;
     padding-top: 5px;
     margin-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 h1 {
@@ -36,16 +38,50 @@ h1 {
 fieldset.sign-up{
 	margin: 0px;
 	border: none;
+	padding-left: 0px;
 }
 
 label {
     display: block;
     text-align: left;
-    padding-left: 30px;
     margin: 20px 0px 20px 0px;
 }
 
 input {
     padding: 15px;
     width: 320px;
+    border: 2px gray solid;
+}
+
+button {
+    background: #5bca5b;
+    width: 320px;
+    padding: 15px;
+    border: 2px #5bca5b solid;
+}
+
+button:hover{
+	background: green;
+}
+
+
+h2 {
+	margin: 0px;
+	color: white;
+}
+
+div.forgot-password {
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+a {
+    color: gray;
+}
+section{
+	text-align: center;
+}
+
+p{
+	color:white;
 }
